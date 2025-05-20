@@ -4,15 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Pokemon Fetcher</title>
 </head>
-<body>
-  <div class="app">
-    <h1>Pokemon Fetcher</h1>
-    <input type="text" id="pokemonInput" placeholder="Enter Pokemon Name...">
-    <button id="fetchBtn">Fetch Pokemon</button>
+<body class="bg-red-100 flex items-center justify-center min-h-screen">
+  <div class="bg-white p-6 rounded-lg shadow-md w-full max-w-md">
+    <h1 class="flex items-center justify-center w-full p-2 border border-gray-300 rounded mb-3">Pokemon Fetcher</h1>
+    <input type="text" id="pokemonInput" placeholder="Enter Pokemon Name..." class="w-full p-2 border border-gray-300 rounded mb-3">
+    <button id="fetchBtn" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">Fetch Pokemon</button>
 
-    <div id="pokemonInfo"></div>
+    <div id="pokemonInfo" class="mt-5 text-center"></div>
   </div>
 </body>
 </html>
